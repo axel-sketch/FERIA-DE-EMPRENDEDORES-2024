@@ -147,6 +147,14 @@ img {
     margin: 10px;
     object-fit: contain;
 }
+.unca img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    object-fit: contain; /* Asegura que todas las imágenes mantengan su proporción dentro de su contenedor */
+    max-height: 150px; /* Ajusta este valor según lo que necesites */
+}
+
 
 @media (max-width: 768px) {
     .unca img {
