@@ -186,9 +186,10 @@ footer p {
     display: inline-block;
 }
 .carrusel img {
-    width: 100%; /* Ajusta las imágenes al ancho del contenedor */
-    max-height: 400px; /* Establece una altura máxima */
-    object-fit: cover; /* Asegura que todas las imágenes se adapten sin deformarse */
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
 
