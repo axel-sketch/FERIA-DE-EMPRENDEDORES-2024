@@ -142,12 +142,19 @@ img {
     align-items: center;
 }
 .unca img {
-    width: 20%;
+    width: 100%; /* Ocupa todo el ancho del contenedor en dispositivos pequeños */
     height: auto;
     margin: 10px;
-    object-fit: contain; /* Asegura que todas las imágenes mantengan su proporción dentro de su contenedor */
-    max-height: 150px; /* Ajusta este valor según lo que necesites */
+    object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    .unca img {
+        width: 80%; /* Reduce el ancho en dispositivos pequeños */
+        max-height: 120px; /* Limita la altura máxima para mantener la proporción */
+    }
+}
+
 .carrusel {
     max-width: 50%; /* Ajusta el ancho del carrusel */
     margin: 0 auto; /* Centra el carrusel */
